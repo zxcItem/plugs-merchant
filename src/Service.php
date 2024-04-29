@@ -47,7 +47,7 @@ class Service extends Plugin
             [
                 'name' => '商户管理',
                 'subs' => [
-                    ['name' => '商户管理', 'icon' => 'layui-icon layui-icon-chart', 'node' => "{$code}/store/index"]
+                    ['name' => '商户管理', 'icon' => 'layui-icon layui-icon-home', 'node' => "{$code}/store/index"]
                 ],
             ],
         ];

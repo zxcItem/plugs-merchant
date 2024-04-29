@@ -34,7 +34,7 @@ class User extends Controller
             $this->bases = SystemBase::items('身份权限');
         }, function (QueryHelper $query) {
             // 数据列表搜索过滤
-            $query->equal('store,status,usertype')->dateBetween('login_at,create_at');
+            $query->equal('store,status,usertype')->dateBetween('login_at,create_time');
             $query->like('username|nickname#username,contact_phone#phone,contact_mail#mail');
         });
     }
